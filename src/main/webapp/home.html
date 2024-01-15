@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Form</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<style>
+	#frm{
+		width:500px;
+		margin:auto;
+		margin-top: 50px;
+	}
+</style>
+</head>
+<body class="container-fluid">
+	<marquee class="text-primary"><h3>Register Here</h3></marquee>
+	<form action="register" method="post" class="form card" id="frm">
+		<h2 class="bg-danger text-light card-header">Registration Form</h2>
+		<table class="table table-hover">
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="userName" required></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="email" name="email" required></td>
+			</tr>
+			<tr>
+				<td>Mobile</td>
+				<td><input type="text" name="mobile" required></td>
+			</tr>
+			<tr>
+				<td>DOB</td>
+				<td><input type="date" name="dob" required></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><input type="radio" name="gender" value="male">Male
+				<input type="radio" name="gender" value="female">Female</td>
+			</tr>
+			<tr>
+				<td>City</td>
+				<td>
+					<select name="city">
+						<option value="pune">Pune</option>
+						<option value="mumbai">Mumbai</option>
+						<option value="delhi">Delhi</option>
+						<option value="hyderabad">Hyderabad</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="card-footer">
+				<td><button type="submit" class="btn btn-outline-success">Register</button></td>
+				<td><button type="reset" class="btn btn-outline-danger">Cancel</button></td>
+			</tr>
+		</table>
+		<button class="btn btn-outline-success d-block"><a href="showdata">Show Users</a></button>
+	</form>
+</body>
+</html>
